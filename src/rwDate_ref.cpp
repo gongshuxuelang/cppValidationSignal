@@ -1,13 +1,13 @@
 #include "head.h"
 
-RWDATE_REF::RWDATE_REF(int dbn_n,int m,int n, int ft,pDEC pDEC_date)
+RWDATE_REF::RWDATE_REF(int dbn_n,int m,int n, int ft,int line_dec)
 {
     DBN_N = dbn_n;      //分解层数   
     file_m = m;         //文件夹号
     file_n = n;         //子文件夹号
     file_txt = ft;     //txt号
-    pDEC_t = pDEC_date;
-    data_line = pDEC_t -> DEC_date[0].size();
+    
+    data_line = line_dec;
 }
 
 bool RWDATE_REF::ReadDate_ref() //读数据

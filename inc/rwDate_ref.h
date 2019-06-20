@@ -6,7 +6,7 @@
 class RWDATE_REF
 {
     public:
-        RWDATE_REF(int dbn_n,int m,int n, int ft,pDEC pDEC_date);
+        RWDATE_REF(int dbn_n,int m,int n, int ft,int line_dec);
         ~RWDATE_REF()
         {
 
@@ -25,8 +25,7 @@ class RWDATE_REF
         int file_txt;                                   //行号
         int data_line;                                  //信号长度        
         int DBN_N;                                      //DBn小波系数        
-        pREF pRWdate_ref;                               //原始数据
-        pDEC pDEC_t;                                    //接收的分解后的结果
+        pREF pRWdate_ref;                               //原始数据        
 };
 
 #endif

@@ -12,7 +12,7 @@
 #include <thread>
 #include <cmath>
 
-#include <boost/progress.hpp>
+#include <boost/timer/timer.hpp>
 #include <boost/lexical_cast.hpp>
 #include <boost/smart_ptr.hpp>
 #include <unistd.h>
