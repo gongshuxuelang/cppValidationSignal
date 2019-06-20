@@ -32,10 +32,13 @@ class RTF
         const double Delta_end   = 3.91;                                  //Delta终止频率    
         const double Theta_begin = 3.91;                                  //Theta起始频率    
         const double Theta_end   = 7.81;                                  //Theta终止频率
+        const double All_begin   = 0.0;
+        const double All_end     = 64.0;
         int Alpha_row;                                                    //Alpha波的长度
         int Beta_row;                                                     //Beta波的长度
         int Delta_row;                                                    //Delta波的长度
         int Theta_row;                                                    //Theta波的长度
+        int All_row;
         int DBN;                                                          //分解DBN分解系数
         int DBN_N;                                                        //小波分解层数
         int REF_Len;                                                      //原始重构小波长度

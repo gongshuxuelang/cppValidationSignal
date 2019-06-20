@@ -12,6 +12,7 @@ RTF::RTF(int dbn,int dbn_n,int dec_len,int fm,int fn,double HZ):DBN(dbn),DBN_N(d
     Beta_row  = ceil(Beta_end  / tf) - ceil(Beta_begin  / tf) + 1;
     Delta_row = ceil(Delta_end / tf) - ceil(Delta_begin / tf) + 1;
     Theta_row = ceil(Theta_end / tf) - ceil(Theta_begin / tf) + 1;
+    All_row = power(2,DBN_N);
 }
 RTF::~RTF()
 {   
@@ -36,6 +37,10 @@ void RTF::Reverse_transform_choose_signal(std::string str)
     {
         choose_row   = Theta_row;
         choose_begin = Theta_begin;
+    }else if("All" == ref_str_signal)
+    {
+        choose_row = All_row;
+        choose_begin = All_begin;
     }
     return;
 }
